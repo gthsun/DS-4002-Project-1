@@ -1,1 +1,12 @@
-This is the README file
+# DS 4002 Project 1 - Skytrax Airline Review Sentiment Analysis
+
+## Software Used
+For data preprocessing, sentiment analysis, and evaluation, we used Jupyter Notebook with Python.
+For hypothesis testing, model development, and additional evaluation, we used RStudio with R.
+
+We all worked with the Mac OS.
+
+## Map of Documentation
+**TBD**
+
+## Instructions for Reproduction of Results
