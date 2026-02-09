@@ -7,6 +7,7 @@ For hypothesis testing, model development, and additional evaluation, we used RS
 We all worked with the Mac OS.
 
 ## Map of Documentation
-**TBD**
+**TBA**
 
 ## Instructions for Reproduction of Results
+**TBA**
