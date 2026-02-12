@@ -1,5 +1,5 @@
 ---
-title: "project1_hypotesting"
+title: "hypothesis_testing"
 author: "Stephanie Diau"
 fontsize: 12pt
 geometry: margin=1in
