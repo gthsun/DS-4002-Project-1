@@ -1,0 +1,76 @@
+---
+title: "project1_hypotesting"
+author: "Stephanie Diau"
+fontsize: 12pt
+geometry: margin=1in
+urlcolor: black
+output: pdf_document
+date: "2026-02-10"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#Load in libraries/packages
+library(tidyverse) #Install first (if needed)
+#Install caret first and set dependencies = TRUE; (if needed), then load
+library(caret)
+
+#Read in cleaned data
+cleaned_data <- read.csv("airline_cleaned.csv")
+airline_data <- read.csv("airline_with_mismatch.csv")
+
+#Converting variables to factors as that is what logistic regression requires
+airline_data$type_traveller<- as.factor(airline_data$type_traveller)
+airline_data$cabin_flown<- as.factor(airline_data$cabin_flown)
+airline_data$mismatch <- as.factor(airline_data$mismatch)
+```
+
+```{r}
+#Creating our train/test split (80/20)
+set.seed(123) #Can set to another number, but 123 is popular
+
+training<- createDataPartition(airline_data$mismatch, p = 0.8, list = FALSE)
+traindata<- airline_data[training, ]
+testdata<- airline_data[-training, ]
+```
+
+```{r}
+#Logistic Regression Model
+logreg_mod <- glm(mismatch ~ type_traveller + cabin_flown, data = traindata, 
+                  family = "binomial")
+
+#Summary (shows our p-values, which we will use to determine statistical significance)
+summary(logreg_mod)
+```
+
+```{r}
+#Odds Ratio
+oddsratio <- exp(coef(logreg_mod))
+confidenceint <- exp(confint(logreg_mod)) #Might take a bit to load
+
+odds_conf <- cbind(OddsRatio = oddsratio, confidenceint)
+print(odds_conf)
+```
+
+```{r}
+#Predictive performance
+predict_prob <- predict(logreg_mod, newdata = testdata, type= "response")
+  
+predict_class <- factor(ifelse(predict_prob > 0.5, 1, 0), 
+                        levels = levels(testdata$mismatch)) #prevents warning
+
+#Confusion matrix; set positive to mismatch (1)
+cmatrix <- confusionMatrix(predict_class, testdata$mismatch, positive = "1")
+print(cmatrix) #Can see accuracy score as well
+```
+
+```{r}
+#Accessing model fit w/ R^2
+nulldev <- logreg_mod$null.deviance
+dev <- logreg_mod$deviance
+pseudo_r2 <- 1- (dev / nulldev)
+print(pseudo_r2)
+```
