@@ -7,6 +7,7 @@ For hypothesis testing, model development, and additional evaluation, we used RS
 We all worked with the Mac OS.
 
 ## Map of Documentation
+```
 DS-4002-Project-1 Folder Outline/
 │
 ├── DATA/
@@ -40,3 +41,4 @@ DS-4002-Project-1 Folder Outline/
 
 ## Instructions for Reproduction of Results
 **TBA**
+```
