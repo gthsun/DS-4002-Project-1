@@ -17,13 +17,27 @@ DS-4002-Project-1 Folder Outline
 │   ├── cleaned
 │   │   ├── bases
 │   │   │   ├── Cabin
-│   │   │   └── Traveler
+│   │   │   │   ├── .ipynb_checkpoints
+│   │   │   │   │   └── cabin_base_cabin_Business Class-checkpoint.csv
+│   │   │   │   ├── cabin_base_cabin_Business Class.csv
+│   │   │   │   ├── cabin_base_cabin_Economy.csv
+│   │   │   │   ├── cabin_base_cabin_First Class.csv
+│   │   │   │   ├── cabin_base_cabin_Premium Economy.csv
+│   │   │   │   └── cabin_base_cabin_Unknown.csv
+│   │   │   ├── Traveler
+│   │   │   │   ├── traveler_base_traveler_Business.csv
+│   │   │   │   ├── traveler_base_traveler_Couple Lesisure.csv
+│   │   │   │   ├── traveler_base_traveler_FamilyLeisure.csv
+│   │   │   │   ├── traveler_base_traveler_Solo Leisure.csv
+│   │   │   │   └── traveler_base_traveler_Unknown.csv
+│   │   │   └── .DS_Store
 │   │   ├── data/.ipynb_checkpoints
 │   │   │   ├── airline-checkpoint.csv
 │   │   │   └── airport-checkpoint.csv
+│   │   ├── .DS_Store
 │   │   ├── airline_all_cols.csv
 │   │   ├── airline_cleaned.csv
-│   │   └──airline_dummies_only.csv
+│   │   └── airline_dummies_only.csv
 │   │
 │   ├── original
 │   │   ├── airline.csv
