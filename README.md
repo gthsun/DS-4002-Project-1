@@ -2,6 +2,8 @@
 
 ## Software Used
 For data preprocessing, sentiment analysis, and evaluation, we used Jupyter Notebook with Python.
+Alongside Python, the packages "pandas" and "re" need to be installed for data preprocessing. 
+
 For hypothesis testing, model development, and additional evaluation, we used RStudio with R. 
 Alongside R, the packages "tidyverse" and "caret" need to be installed for hypothesis testing. 
 
@@ -28,12 +30,11 @@ DS-4002-Project-1 Folder Outline
 │   └── with_sentiments
 │       └── airline_cleaned_with_sentiment.csv
 │
+├── OUTPUT
+│   └── **TBA**
 ├── SCRIPTS
 │   ├── hypothesis_testing.Rmd
 │   ├── sentiment_analysis.ipynb
-│   └── **TBA**
-│
-├── OUTPUT
 │   └── **TBA**
 │
 ├── LICENSE.md
