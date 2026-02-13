@@ -2,7 +2,7 @@
 
 ## Software Used
 For data preprocessing, sentiment analysis, and evaluation, we used Jupyter Notebook with Python.
-Alongside Python, the packages "pandas" and "re" need to be installed for data preprocessing. 
+Alongside Python, the packages "pandas" and "re" need to be installed for data preprocessing. The packages "pandas", "torch", "transformers", and "pathlib" are needed for sentiment analysis. 
 
 For hypothesis testing, model development, and additional evaluation, we used RStudio with R. 
 Alongside R, the packages "tidyverse" and "caret" need to be installed for hypothesis testing. 
