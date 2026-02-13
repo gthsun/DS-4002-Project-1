@@ -15,8 +15,15 @@ DS-4002-Project-1 Folder Outline
 │
 ├── DATA
 │   ├── cleaned
-│   │   ├── **TBA**
-│   │   └── **TBA**
+│   │   ├── bases
+│   │   │   ├── Cabin
+│   │   │   └── Traveler
+│   │   ├── data/.ipynb_checkpoints
+│   │   │   ├── airline-checkpoint.csv
+│   │   │   └── airport-checkpoint.csv
+│   │   ├── airline_all_cols.csv
+│   │   ├── airline_cleaned.csv
+│   │   └──airline_dummies_only.csv
 │   │
 │   ├── original
 │   │   ├── airline.csv
@@ -32,10 +39,11 @@ DS-4002-Project-1 Folder Outline
 │
 ├── OUTPUT
 │   └── **TBA**
+│
 ├── SCRIPTS
+│   ├── cleaning_data.ipynb
 │   ├── hypothesis_testing.Rmd
-│   ├── sentiment_analysis.ipynb
-│   └── **TBA**
+│   └── sentiment_analysis.ipynb
 │
 ├── LICENSE.md
 │
