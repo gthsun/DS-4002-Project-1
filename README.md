@@ -53,6 +53,7 @@ DS-4002-Project-1 Folder Outline
 │
 ├── OUTPUT
 │   ├── cfnmatrix_results.png
+│   ├── eda_plots_with_purposes.png
 │   ├── logregmodel_results.png
 │   ├── modelfit_results.png
 │   └── oddsratio_results.png
@@ -64,7 +65,7 @@ DS-4002-Project-1 Folder Outline
 │
 ├── LICENSE.md
 │
-└── README.md
+├── README.md
 │
 └── data_dictionary.md
 ```
