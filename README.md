@@ -7,7 +7,7 @@ Alongside Python, the packages "pandas" and "re" need to be installed for data p
 For hypothesis testing, model development, and additional evaluation, we used RStudio with R. 
 Alongside R, the packages "tidyverse" and "caret" need to be installed for hypothesis testing. 
 
-We all worked with the Mac OS.
+We all worked with Mac OS.
 
 ## Map of Documentation
 ```
@@ -52,7 +52,10 @@ DS-4002-Project-1 Folder Outline
 │       └── airline_cleaned_with_sentiment.csv
 │
 ├── OUTPUT
-│   └── **TBA**
+│   ├── cfnmatrix_results.png
+│   ├── logregmodel_results.png
+│   ├── modelfit_results.png
+│   └── oddsratio_results.png
 │
 ├── SCRIPTS
 │   ├── cleaning_data.ipynb
@@ -66,4 +69,8 @@ DS-4002-Project-1 Folder Outline
 
 
 ## Instructions for Reproduction of Results
-**TBA**
+To reproduce our results, first download the data...
+
+Next, complete sentiment analysis by...
+
+Finally, get results for hypothesis testing by making sure to install and load in the two R packages as mentioned above in this README. Download the 'hypothesis_testing.Rmd' script from the SCRIPTS folder and run the entire file (after making sure to set the working directory to the same one as where the cleaned data files are located). Output produced in R by using the hypothesis testing script should mimic the output as presented in the OUTPUT folder exactly.
