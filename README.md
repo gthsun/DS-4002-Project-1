@@ -51,7 +51,7 @@ DS-4002-Project-1 Folder Outline
 │   ├── with_sentiments
 │   │   └── airline_cleaned_with_sentiment.csv
 │   │  
-│   └── data_dictionary.md
+│   └── Data Appendix - DS 4002 Group 1 Project 1.pdf
 │
 ├── OUTPUT
 │   ├── cfnmatrix_results.png
