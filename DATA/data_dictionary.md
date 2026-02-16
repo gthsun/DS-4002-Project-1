@@ -1,5 +1,7 @@
 # Data Dictionary
 
+### Unit of Observation: Airline Review
+
 | Column         | Description                                                                                                         | Example(s)                                                                                                                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | content        | The text content of each review left by the reviewer. This is the text that the sentiment analysis would be run on. | "DUB-ALC. Flew on an A320 both ways. Very high density and seats tight. Delay of 30 mins both ways. Very friendly staff and actually made you feel that you were important to them as a person not a customer. Food was lovely and landing was extremely smooth as usual." |

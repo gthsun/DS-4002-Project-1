@@ -48,8 +48,10 @@ DS-4002-Project-1 Folder Outline
 │   ├── with_mismatch
 │   │   └── airline_with_mismatch.csv
 │   │
-│   └── with_sentiments
-│       └── airline_cleaned_with_sentiment.csv
+│   ├── with_sentiments
+│   │   └── airline_cleaned_with_sentiment.csv
+│   │  
+│   └── data_dictionary.md
 │
 ├── OUTPUT
 │   ├── cfnmatrix_results.png
@@ -66,8 +68,6 @@ DS-4002-Project-1 Folder Outline
 ├── LICENSE.md
 │
 ├── README.md
-│
-└── data_dictionary.md
 ```
 
 
