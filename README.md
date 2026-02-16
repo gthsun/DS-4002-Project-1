@@ -67,7 +67,7 @@ DS-4002-Project-1 Folder Outline
 │
 ├── LICENSE.md
 │
-├── README.md
+└── README.md
 ```
 
 
